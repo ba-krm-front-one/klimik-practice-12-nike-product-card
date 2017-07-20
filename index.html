@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nike Product Card</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="assets/shoes.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="header__logo">
+			<img src="assets/logo.png" alt="Nike Logo">
+		</div>
+		<div class="header-nav">
+			<nav>
+				<a href="#" class="header-nav__link">Lifestyle</a>
+				<a href="#" class="header-nav__link">Running</a>
+				<a href="#" class="header-nav__link">Football</a>
+				<a href="#" class="header-nav__link">Skateboarding</a>
+			</nav>
+		</div>
+		<div class="header__hamburger">
+			<img src="assets/btn-menu.png" alt="Menu">
+		</div>
+	</header>
+	<main class="main">
+		<div class="card">
+			<section class="card-item">
+				<div class="card-item__shoes">
+					<img src="assets/shoes.png" alt="Nike Shoes">
+				</div>
+				<div class="card-item__add-btn">
+					<img src="assets/btn-add.png" alt="Add Button">
+				</div>
+				<div>
+					<ul class="card-item-slider">
+						<li class="card-item-slider__element"><img src="assets/shoes-1.png" alt="Nike Shoes"></li>
+						<li class="card-item-slider__element"><img src="assets/shoes-2.png" alt="Nike Shoes"></li>
+						<li class="card-item-slider__element"><img src="assets/shoes-3.png" alt="Nike Shoes"></li>
+					</ul>
+				</div>
+			</section>
+			<section class="card-info">
+				<div class="card-info__btn-close">
+					<img src="assets/btn-close.png" alt="Close">
+				</div>
+				<div class="card-info__marker-new"><p>new</p></div>
+				<div>
+					<h2 class="card-info__title">the <span>running</span> has just begun</h2>
+				</div>
+				<div class="card-info-rate">
+					<div class="card-info-rate__title"><p>Huarache</p></div>
+					<div class="card-info-rate__stars">
+						<input id="gorgeous" type="radio">
+						<label title="gorgeous" for="gorgeous"></label>
+
+						<input id="good" type="radio">
+						<label title="good" for="good"></label>
+
+						<input id="regular" type="radio">
+						<label title="regular" for="regular"></label>
+
+						<input id="poor" type="radio">
+						<label title="poor" for="poor"></label>
+
+						<input id="bad" type="radio">
+						<label title="bad" for="bad"></label>
+					</div>
+				</div>
+				<div class="card-info__price">
+					<p>&dollar;200</p>
+				</div>
+				<div class="card-info-form">
+					<form action="#">
+						<p class="card-info-form__title">Size</p>
+						<input type="radio" id="first">
+						<label class="card-info-form__number" for="first">7</label>
+						<input type="radio" id="second">
+						<label class="card-info-form__number" for="second">8</label>
+						<input type="radio" id="third">
+						<label class="card-info-form__number" for="third">9</label>
+						<input type="radio" id="fourth">
+						<label class="card-info-form__number" for="fourth">10</label>
+						<input type="radio" id="fifth">
+						<label class="card-info-form__number" for="fifth">11</label>
+						<button class="card-info-form__submit button-style" type="submit">Add to cart</button>
+					</form>
+				</div>
+				<div>
+					<button class="card-info__btn-wishlist button-style">Wishlist</button>
+				</div>
+			</section>
+		</div>
+		<div class="card"></div>
+		<div class="card"></div>
+	</main>
+</body>
+</html>
